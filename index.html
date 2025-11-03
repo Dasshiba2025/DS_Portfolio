@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>My Portfolio</title>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+        <link rel="stylesheet" href="style.css" />
+    </head>
+
+    <body>
+        <!-- HEADER SECTION -->
+        <header>
+            <nav>
+                <!-- Portfolio Logo / Name -->
+                <h3 class="logo">Das Shiba</h3>
+
+                <!-- Hamburger Menu Icon for Mobile View -->
+                <span class="toggle" onclick="toggleMenu()" id="menu-icon">≡</span>
+
+                <!-- Navigation Links -->
+                <ul>
+                    <li><a href="#info">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#projects">Projects</a></li>
+                    <li><a href="#certification">Certification</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </nav>
+        </header>
+
+        <!-- HOME / INFO SECTION -->
+        <section id="info" class="section info">
+            <div class="info-content">
+                <!-- Profile Image -->
+                <img src="./assets/good.JPG" width="50%" class="pic" alt="Das Shiba Profile Picture">
+
+                <!-- Introduction -->
+                <h1>Hi, I'm Das Shiba 👨‍💻</h1>
+                <p>Aspiring Full Stack Web Developer</p>
+
+                <!-- Button to scroll to Projects section -->
+                <a href="#projects" class="btn">View My Work</a>
+            </div>
+        </section>
+
+        <!-- ABOUT SECTION -->
+        <section id="about" class="section about">
+            <h2>About Me</h2>
+            <p>
+                Aspiring full stack developer with knowledge of front-end technologies
+                (HTML, CSS, JavaScript, jQuery) and back-end development using
+                PHP, Python, Java, and MySQL. I enjoy building complete web applications and
+                I am eager to learn more by working on real projects. Passionate about learning
+                new things with innovative ideas. Looking for an opportunity to start my career
+                and grow as a full stack developer.
+            </p>
+        </section>
+
+        <!-- PROJECTS SECTION -->
+        <section id="projects" class="section projects">
+        <h2>Projects</h2>
+
+    <!-- Grid Layout for Projects -->
+    <div class="project-grid">
+
+    <!-- Project Card 1 -->
+    <div class="project-card">
+      <img src="./assets/portfolio-logo.png" width="380px" alt="Portfolio Screenshot">
+      <h3>Responsive Portfolio Site</h3>
+      <p>A responsive portfolio built with HTML5, CSS3, and jQuery for seamless user experiences.</p>
+      <a href="#info" target="_blank" class="btn">View Project</a>
+    </div>
+
+    
+
+    
+  </div>
+</section>
+
+
+        <!-- CERTIFICATION SECTION -->
+<section id="certification" class="section certification">
+    <h2>Certifications</h2>
+
+    <!-- Grid Layout for Certificates -->
+    <div class="certification-grid">
+
+        <!-- Certificate 1 -->
+        <div class="certificate-card">
+            <!-- Clickable image linking to official certificate -->
+            <a href="https://www.linkedin.com/posts/das-shiba_business-analysis-and-process-management-activity-7362603428977545216-TQp9?utm_source=share&utm_medium=member_android&rcm=ACoAAE8F1EsB1DEo4nKGweBPEJz6KZBRH_cXou8" target="_blank" >
+                <img src="./assets/BAPM-certificate.png" width="250px" alt="Business Analysis & Process Management">
+            </a>
+            <h3>Business Analysis & Process Management</h3>
+            <p>Issued by: Coursera</p>
+        </div>
+
+        <!-- Certificate 2 -->
+        <div class="certificate-card">
+            <a href="https://www.linkedin.com/posts/das-shiba_ibm-artificialintelligence-ibm-activity-7334883293068185600-KKiD?utm_source=share&utm_medium=member_android&rcm=ACoAAE8F1EsB1DEo4nKGweBPEJz6KZBRH_cXou8" target="_blank" rel="noopener noreferrer">
+                <img src="./assets/AI-certificate.png" width="250px" alt="Introduction to Artificial Intelligence">
+            </a>
+            <h3>Introduction to Artificial Intelligence</h3>
+            <p>Issued by: IBM Skills Build</p>
+        </div>
+
+        <!-- Certificate 3 -->
+        <div class="certificate-card">
+            <a href="https://www.linkedin.com/in/das-shiba?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app" target="_blank" rel="noopener noreferrer">
+                <img src="./assets/EC-certificate.png" width="250px" height="200px" alt="Elocution Competition">
+            </a>
+            <h3>Elocution Competition On Indian Knowledge System</h3>
+            <p>Issued by: SPU(Sardar Patel University)</p>
+        </div>
+    </div>
+</section>
+
+        
+        <!-- CONTACT SECTION -->
+        <section id="contact" class="section contact">
+            <h2>Contact Me</h2>
+
+            <!-- Contact Form -->
+            <form id="contact-form" action="https://formspree.io/f/xnnolzqy" method="post">
+                <input type="text" name="name" placeholder="Enter name" required>
+                <input type="email" name="email" placeholder="Enter email" required />
+                <textarea name="message" placeholder="Message" required></textarea>
+                <button type="submit">Send Message</button>
+                <p id="status"></p>
+            </form>
+        </section>
+
+       <!-- FOOTER SECTION -->
+    <footer>
+    <div class="footer-container">
+        <h3 class="footer-logo">Das Shiba</h3>
+        <p>© 2025 Das Shiba. All rights reserved.</p>
+
+        <div class="footer-socials">
+        <a href="https://github.com/Dasshiba2025" target="_blank">
+            <i class="fab fa-github"></i> GitHub
+        </a>
+        <a href="https://www.linkedin.com/in/das-shiba" target="_blank">
+            <i class="fab fa-linkedin"></i> LinkedIn
+        </a>
+        <a href="mailto:dasshiba7894@gmail.com">
+            <i class="fas fa-envelope"></i> Email
+        </a>
+        </div>
+    </div>
+    </footer>
+
+
+        <!-- JAVASCRIPT FILE -->
+        <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+        <script src="script.js"></script>
+
+    </body>
+</html>
