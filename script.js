@@ -50,4 +50,17 @@ $(document).ready(function () {
     $("nav ul").removeClass("show");
     $("#menu-icon").text("≡");
   });
+
+  // SMOOTH SCROLL ON "View My Work" button CLICK
+  $("#info div a").on("click", function (e) {
+    e.preventDefault(); // Prevent default anchor jump
+
+    // Get the target section ID from href attribute
+    const target = $(this).attr("href");
+
+    // Smooth scroll animation
+    $("html, body").animate({
+      scrollTop: $(target).offset().top - 60 // Offset for header height
+    }, 800); // 800ms = smooth scroll duration
+  });
 });
