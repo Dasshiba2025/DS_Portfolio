@@ -16,11 +16,13 @@ body {
 /* HEADER & NAVIGATION */
 header {
   background:rgba(28, 3, 32, 0.8);
-  color: #fff;
+  color: #ffffff;
+  border-radius: 0 0 4px 4px;
   padding: 20px 0;
   position: sticky;
   top: 0;
   z-index: 1000;
+  box-shadow: 0px 5px 20px rgba(0, 0, 0, 0.9);
 }
 
 /* Flex container for header content */
@@ -102,6 +104,7 @@ section {
 .pic {
   border-radius: 50%;
   margin-bottom: 20px;
+  box-shadow: 0px 5px 30px rgba(0, 0, 0, 0.5);
 }
 
 .btn {
@@ -111,6 +114,7 @@ section {
   color: #fff;
   padding: 10px 20px;
   border-radius: 5px;
+  box-shadow: 0px 5px 30px rgba(0, 0, 0, 0.5);
   text-decoration: none;
   transition: transform 0.3s ease-in-out;
 }
@@ -120,16 +124,64 @@ section {
 }
 /* ABOUT SECTION */
 .about h2{
-  font-size: 2em;
+  font-size: 2rem;
   margin-bottom: 20px;
   color: #fff;
 }
 
-/* =======================
-   PROJECT SECTION
-======================= */
+/* Skills Section */
+
+.skills {
+  background: linear-gradient(178deg, #2d0536, #69ddc2);
+  text-align: center;
+  padding: 60px 20px;
+}
+
+.skills h2 {
+  font-size: 2rem;
+  margin-bottom: 30px;
+  color: #fff;
+}
+
+.skills-container {
+  max-width: 800px;
+  margin: auto;
+  text-align: left;
+}
+
+.skill {
+  margin-bottom: 20px;
+}
+
+.skill span {
+  font-weight: bold;
+  display: block;
+  margin-bottom: 8px;
+}
+
+.progress {
+  background: #ddd;
+  border-radius: 20px;
+  height: 10px;
+  box-shadow: 0 4px 7px rgba(0, 0, 0, 0.5);
+  overflow: hidden;
+}
+
+.progress-bar {
+  height: 10px;
+  background: linear-gradient(178deg, #69ddc2,#2d0536);
+  border-radius: 20px;
+  transition: width 1s ease;
+}
+
+
+/* PROJECT SECTION */
 .projects {
  background: linear-gradient(178deg, #2d0536, #69ddc2);
+}
+
+.projects h2{
+  font-size: 2rem;
 }
 
 .project-grid {
@@ -147,7 +199,7 @@ section {
   color: #000;
   padding: 25px;
   border-radius: 15px;
-  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.15);
+  box-shadow: 0px 5px 30px rgba(0, 0, 0, 0.5);
   transition: transform 0.3s ease, box-shadow 0.3s ease;
   text-align: center;
 }
@@ -192,7 +244,7 @@ section {
 }
 
 .certification h2 {
-  font-size: 2em;
+  font-size: 2rem;
   margin-bottom: 20px;
   color: #fff;
 }
@@ -212,7 +264,7 @@ section {
   border-radius: 10px;
   padding: 15px;
   width: 280px;
-  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+ box-shadow: 0px 5px 30px rgba(0, 0, 0, 0.5);
   transition: transform 0.3s ease-in-out;
 }
 
@@ -233,7 +285,7 @@ section {
 
 /* CONTACT FORM SECTION */
 .contact h2{
-  font-size: 2em;
+  font-size: 2rem;
   margin-bottom: 20px;
   color: #fff;
 }
@@ -249,6 +301,7 @@ form input,
 form textarea {
   padding: 10px;
   border: 1px solid #ccc;
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.4);
   border-radius: 5px;
 }
 
@@ -257,6 +310,7 @@ form button {
   color: white;
   padding: 10px;
   border: none;
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.9);
   border-radius: 5px;
   cursor: pointer;
   font-weight: bold;
@@ -264,6 +318,7 @@ form button {
 
 form button:hover {
   opacity: 0.9;
+  transform: translateY(-3px);
 }
 
 /* FOOTER SECTION */
