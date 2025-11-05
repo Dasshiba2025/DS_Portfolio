@@ -16,7 +16,7 @@ body {
 /* HEADER & NAVIGATION */
 header {
   background:rgba(28, 3, 32, 0.8);
-  color: #ffffff;
+  color: #fff;
   border-radius: 0 0 4px 4px;
   padding: 20px 0;
   position: sticky;
